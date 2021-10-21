@@ -1,0 +1,1 @@
+- Documento para salvar questões da disciplina de "Introdução ás Técnicas de Programação"
