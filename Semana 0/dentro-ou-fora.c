@@ -7,17 +7,11 @@ int main() {
     scanf("%d%d%d%d", &esqInfX, &esqInfY, &dirSupX, &dirSupY);
     scanf("%d%d", &pontoX, &pontoY);
     
-    if(esqInfX <= pontoX && pontoX <= dirSupX){
-        if(esqInfY <= pontoY && pontoY <= dirSupY){
-        printf("Dentro!");    
-        }
-        else{
-            printf("Fora!");  
-        }
+    if(esqInfX <= pontoX && pontoX <= dirSupX && esqInfY <= pontoY && pontoY <= dirSupY){
+        printf("Dentro!");
     }
     else{
         printf("Fora!");  
     }
-    
     return 0;
 }
