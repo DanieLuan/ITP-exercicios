@@ -1,19 +1,28 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
-int main() {
+int main()
+{
+    int n=0, n2=0;
+    double tn=0, serie=0;
 
-    int dias, meses=0, anos=0;
+    scanf("%lf", &tn);
 
-    scanf("%d", &dias);
-    
-    anos = dias / 365;
-    dias = dias % 365;
-    meses = dias / 30;
-    dias = dias % 30;
+    while (serie>-1){
+        scanf("%lf", &serie);
+        n2++;
+        if (serie == -1){
+            break;
+        }
+        else if(serie<=tn){
+            n++;
+        }
+    }
+    n2 = n /8;
+    if(n%8 > 0){
+        n2++;
+    } 
+    printf("%d %d", n, n2);
 
-    printf("%d ano(s)\n", anos);
-    printf("%d mes(es)\n", meses);
-    printf("%d dia(s)\n", dias);
     return 0;
 }
